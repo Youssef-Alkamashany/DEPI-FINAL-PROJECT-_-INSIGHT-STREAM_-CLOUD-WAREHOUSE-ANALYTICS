@@ -1,6 +1,5 @@
-
 🚀 InsightStream: Cloud Data Warehouse & Analytics (ELT_Pipeline).
-__________________________________________________________________________
+================================================================================
 Welcome to InsightStream, a state-of-the-art data engineering project designed to showcase a robust, scalable, and automated ELT (Extract, Load, Transform) architecture. This project focuses on transforming large-scale raw datasets into actionable business intelligence through a meticulously designed pipeline.
 --------------------------------------------------------------------------------------------------------------------
 🌟 Project Overview.
