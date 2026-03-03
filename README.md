@@ -46,7 +46,7 @@ Insightful: Provides clear, interactive visualizations for rapid business unders
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
 👨‍💻 Team InsightStream :-
 --------------------------------
-Team Lead: Youssef Ahmed Mohamed Alkamashany.
+Team Lead: Youssef Ahmed Mohamed Alkamashany---
 Data Engineers: Abdelrahman Adel, Abdullah Mohamed, Omar Abdelgawad.
 -------------------------------------------------------------------------------------
 This project serves as a practical demonstration of building a resilient and efficient modern data platform, emphasizing best practices in data engineering and analytics.
