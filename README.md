@@ -57,7 +57,7 @@
 
 ### 👥 Project Team
 * **Team Lead:** Youssef Ahmed Mohamed Alkamashany
-* **Team Members:** Abdullah Mohamed Ahmed, Abdelrahman Adel Abu Taleb, Omar Abdelgawad Mohamed
+* **Team Members:** Abdullah Mohamed Ahmed, Abdelrahman Adel Abu Taleb, Omar Abdelgawad Mahmoud
 
 ---
 
