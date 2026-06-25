@@ -1,0 +1,16 @@
+# ضع نسخة من الملف ده في: ~/.dbt/profiles.yml  (على ويندوز: C:\Users\YOUR_NAME\.dbt\profiles.yml)
+# وغيّر القيم دي بمعلومات حسابك في Snowflake
+
+insightstream:
+  target: dev
+  outputs:
+    dev:
+      type: snowflake
+      account: wimlmns-yg71923
+      user: youssefalkamashany
+      password: Youssefalkamashany2072006y
+      role: ACCOUNTADMIN
+      database: insightstream_db
+      warehouse: insightstream_wh
+      schema: analytics
+      threads: 4

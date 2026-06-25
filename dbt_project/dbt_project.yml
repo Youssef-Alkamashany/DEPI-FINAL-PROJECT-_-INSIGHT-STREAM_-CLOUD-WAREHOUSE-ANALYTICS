@@ -1,0 +1,16 @@
+name: 'insightstream'
+version: '1.0.0'
+config-version: 2
+
+profile: 'insightstream'
+
+model-paths: ["models"]
+
+models:
+  insightstream:
+    staging:
+      +materialized: view
+    intermediate:
+      +materialized: view
+    marts:
+      +materialized: table
