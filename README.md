@@ -41,6 +41,7 @@
 Apache Airflow (Docker Engine)
 
 ```
+---
 
 ## 📌 Medallion Data Modeling Layers:
 1. **Bronze (Raw):** Untransformed source data stored exactly as ingested into Snowflake.
