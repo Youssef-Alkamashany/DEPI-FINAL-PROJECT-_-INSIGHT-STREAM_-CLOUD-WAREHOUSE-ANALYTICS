@@ -13,12 +13,12 @@
 
 ---
 
-### 🌟 Project Overview
+## 🌟 Project Overview
 **InsightStream** is a high-performance, cloud-native ELT (Extract, Load, Transform) solution designed to handle massive dataset ingestion (~100K real e-commerce orders) and complex data modeling. The project eliminates external dependencies and reduces data latency by leveraging **Snowflake’s Internal Stages** and orchestrating the entire lifecycle using **Apache Airflow**.
 
 ---
 
-### 🚀 Key Technical Objectives
+## 🚀 Key Technical Objectives
 * **Scalable Data Ingestion:** Automating the ingestion of large-scale CSV datasets directly into Snowflake Internal Storage.
 * **Modular Transformation (dbt):** Building a multi-layered Medallion architecture (Bronze/Staging, Silver/Intermediate, and Gold/Marts) using dbt to ensure data quality and automated documentation.
 * **Workflow Orchestration:** Implementing robust Airflow DAGs to manage end-to-end schedules and monitor pipeline health.
@@ -26,7 +26,7 @@
 
 ---
 
-### 🏗️ End-to-End Pipeline Architecture (The ELT Flow)
+## 🏗️ End-to-End Pipeline Architecture (The ELT Flow)
 
 
 ```
@@ -42,7 +42,7 @@ Apache Airflow (Docker Engine)
 
 ```
 
-#### 📌 Medallion Data Modeling Layers:
+## 📌 Medallion Data Modeling Layers:
 1. **Bronze (Raw):** Untransformed source data stored exactly as ingested into Snowflake.
 2. **Silver (Staging & Intermediate):** 
    * *Staging:* Type casting, column renaming, and initial cleaning (No business logic).
@@ -51,7 +51,7 @@ Apache Airflow (Docker Engine)
 
 ---
 
-### 📊 Data Lineage & Schema Relationships
+## 📊 Data Lineage & Schema Relationships
 
 #### 🔹 dbt Lineage Graph (Bronze → Silver → Gold)
 <p align="center">
