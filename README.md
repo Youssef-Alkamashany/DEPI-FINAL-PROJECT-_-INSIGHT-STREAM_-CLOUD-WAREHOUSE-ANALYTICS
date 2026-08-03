@@ -26,6 +26,15 @@
 
 ---
 
+## 📁 Source Dataset
+The pipeline is fed by the **Brazilian E-Commerce Public Dataset by Olist (Kaggle)**, containing ~100k real commercial orders.
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/Youssef-Alkamashany/DEPI-FINAL-PROJECT-_-INSIGHT-STREAM_-CLOUD-WAREHOUSE-ANALYTICS/main/presentation_and_docs/DEPI%205.jpeg" width="85%" alt="Kaggle Source Dataset" />
+</p>
+
+---
+
 ## 🏗️ End-to-End Pipeline Architecture (The ELT Flow)
 
 
@@ -43,7 +52,7 @@ Apache Airflow (Docker Engine)
 ```
 ---
 
-## 📌 Medallion Data Modeling Layers:
+### 📌 Medallion Data Modeling Layers:
 1. **Bronze (Raw):** Untransformed source data stored exactly as ingested into Snowflake.
 2. **Silver (Staging & Intermediate):** 
    * *Staging:* Type casting, column renaming, and initial cleaning (No business logic).
@@ -52,16 +61,46 @@ Apache Airflow (Docker Engine)
 
 ---
 
-## 📊 Data Lineage & Schema Relationships
+## 📊 Data Lineage (Bronze → Silver → Gold)
 
-#### 🔹 dbt Lineage Graph (Bronze → Silver → Gold)
 <p align="center">
-  <img src="presentation_and_docs/images/dbt_lineage.png" width="90%" alt="dbt Lineage Graph" />
+  <img src="https://raw.githubusercontent.com/Youssef-Alkamashany/DEPI-FINAL-PROJECT-_-INSIGHT-STREAM_-CLOUD-WAREHOUSE-ANALYTICS/main/presentation_and_docs/DEPI%207.jpeg" width="90%" alt="dbt Lineage Graph" />
 </p>
 
-#### 🔹 Power BI Data Model (Gold Layer Relationships)
+---
+
+## ⚙️ Airflow Orchestration & Pipeline Proof
+
+The pipeline is orchestrated via the `insightstream_elt_pipeline` DAG running on a daily schedule (`@daily`).
+
+### 🔹 DAG Graph & Tasks Execution
 <p align="center">
-  <img src="presentation_and_docs/images/powerbi_model.png" width="85%" alt="Power BI Data Model View" />
+  <img src="https://raw.githubusercontent.com/Youssef-Alkamashany/DEPI-FINAL-PROJECT-_-INSIGHT-STREAM_-CLOUD-WAREHOUSE-ANALYTICS/main/presentation_and_docs/DEPI%201.jpeg" width="85%" alt="Airflow DAG Graph" />
+</p>
+
+#### 🔹 Successful Pipeline Execution History
+<p align="center">
+  <img src="https://raw.githubusercontent.com/Youssef-Alkamashany/DEPI-FINAL-PROJECT-_-INSIGHT-STREAM_-CLOUD-WAREHOUSE-ANALYTICS/main/presentation_and_docs/DEPI%206.jpeg" width="85%" alt="Airflow Pipeline Run History" />
+</p>
+
+#### 🔹 Ingestion Task Duration & Code Structure
+<p align="center">
+  <img src="https://raw.githubusercontent.com/Youssef-Alkamashany/DEPI-FINAL-PROJECT-_-INSIGHT-STREAM_-CLOUD-WAREHOUSE-ANALYTICS/main/presentation_and_docs/DEPI%202.jpeg" width="48%" alt="Task Duration" />
+  <img src="https://raw.githubusercontent.com/Youssef-Alkamashany/DEPI-FINAL-PROJECT-_-INSIGHT-STREAM_-CLOUD-WAREHOUSE-ANALYTICS/main/presentation_and_docs/DEPI%203.jpeg" width="48%" alt="DAG Python Code" />
+</p>
+
+#### 🔹 Active DAG Dashboard Status
+<p align="center">
+  <img src="https://raw.githubusercontent.com/Youssef-Alkamashany/DEPI-FINAL-PROJECT-_-INSIGHT-STREAM_-CLOUD-WAREHOUSE-ANALYTICS/main/presentation_and_docs/DEPI%204.jpeg" width="85%" alt="Airflow DAGs List" />
+</p>
+
+---
+
+## 📈 Business Intelligence Dashboard
+The final, governed Gold-layer tables feed directly into Power BI Desktop via live connection, providing deep commercial insights on order volumes, revenue trends, and geographical distribution.
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/Youssef-Alkamashany/DEPI-FINAL-PROJECT-_-INSIGHT-STREAM_-CLOUD-WAREHOUSE-ANALYTICS/main/presentation_and_docs/DEPI%208.jpeg" width="90%" alt="InsightStream Power BI Sales Dashboard" />
 </p>
 
 ---
@@ -74,24 +113,6 @@ Apache Airflow (Docker Engine)
 | **dbt (Data Build Tool)** | Handles SQL-based transformations, version control, lineage, and testing. |
 | **Apache Airflow** | The orchestration engine for scheduling, monitoring, and error handling (Dockerized). |
 | **Power BI** | Enterprise BI tool for building interactive visualizations directly connected to Snowflake Gold Marts. |
-
----
-
-## ⚙️ Airflow Orchestration & Reproducibility
-The pipeline is orchestrated via the `insightstream_elt_pipeline` DAG running on a daily schedule (`@daily`). Execution is strictly linear (`load_raw_data_to_snowflake` ➔ `dbt_run` ➔ `dbt_test`) to ensure downstream data integrity.
-
-<p align="center">
-  <img src="presentation_and_docs/images/airflow_dag_tree.png" width="85%" alt="Airflow DAG Execution Tree" />
-</p>
-
----
-
-## 📈 Business Intelligence Dashboard
-The final, governed Gold-layer tables feed directly into Power BI Desktop via live connection, providing deep commercial insights on order volumes, revenue trends, and geographical distribution.
-
-<p align="center">
-  <img src="presentation_and_docs/images/sales_dashboard.png" width="90%" alt="InsightStream Power BI Sales Dashboard" />
-</p>
 
 ---
 
@@ -117,6 +138,10 @@ The final, governed Gold-layer tables feed directly into Power BI Desktop via li
 [![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Youssef-Alkamashany)
 
 ---
+
 <p align="center">"Building the foundation so solidly that the dashboard becomes the easy part." ☁️📊</p>
 
 ---
+
+
+
