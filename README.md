@@ -65,7 +65,7 @@ Apache Airflow (Docker Engine)
 
 ---
 
-### 🛠️ Tech Stack & Role Breakdown
+## 🛠️ Tech Stack & Role Breakdown
 | Technology | Role & Implementation |
 | :--- | :--- |
 | **Python** | Core language for dataset ingestion scripts and Airflow DAG development. |
@@ -76,7 +76,7 @@ Apache Airflow (Docker Engine)
 
 ---
 
-### ⚙️ Airflow Orchestration & Reproducibility
+## ⚙️ Airflow Orchestration & Reproducibility
 The pipeline is orchestrated via the `insightstream_elt_pipeline` DAG running on a daily schedule (`@daily`). Execution is strictly linear (`load_raw_data_to_snowflake` ➔ `dbt_run` ➔ `dbt_test`) to ensure downstream data integrity.
 
 <p align="center">
@@ -85,7 +85,7 @@ The pipeline is orchestrated via the `insightstream_elt_pipeline` DAG running on
 
 ---
 
-### 📈 Business Intelligence Dashboard
+## 📈 Business Intelligence Dashboard
 The final, governed Gold-layer tables feed directly into Power BI Desktop via live connection, providing deep commercial insights on order volumes, revenue trends, and geographical distribution.
 
 <p align="center">
@@ -94,20 +94,20 @@ The final, governed Gold-layer tables feed directly into Power BI Desktop via li
 
 ---
 
-### 🧪 Quality Assurance & Testing Pyramid
+## 🧪 Quality Assurance & Testing Pyramid
 * **Data Quality (dbt test):** Uniqueness, `not_null`, and referential integrity assertions (`schema.yml`).
 * **Integration Testing:** Verified end-to-end DAG execution from raw Kaggle CSVs to queryable Gold marts.
 * **Defect Handling:** Caught and resolved 3 real-world infrastructure issues (Flask secret key duplication, Snowflake session context loss, and uninitialized warehouse objects).
 
 ---
 
-### 👥 Project Team
+## 👥 Project Team
 * **Team Lead:** Youssef Ahmed Mohamed Alkamashany
 * **Team Members:** Abdelrahman Adel Abdelmola Abu Taleb, Abdullah Mohamed Ahmed, Omar Abdelgawad Mahmoud
 
 ---
 
-### 👤 Author & Contact
+## 👤 Author & Contact
 **Youssef Alkamashany**
 * 🚀 **Aspiring MLOps/LLMOps & AI Data Engineer**.
 * 💼 Team Leader — Microsoft Data Engineering | Digital Egypt Pioneers Initiative (DEPI).
@@ -118,4 +118,4 @@ The final, governed Gold-layer tables feed directly into Power BI Desktop via li
 ---
 <p align="center">"Building the foundation so solidly that the dashboard becomes the easy part." ☁️📊</p>
 
-```
+---
