@@ -13,12 +13,12 @@
 
 ---
 
-### 🌟 Project Overview
+## 🌟 Project Overview
 **InsightStream** is a high-performance, cloud-native ELT (Extract, Load, Transform) solution designed to handle massive dataset ingestion and complex data modeling. The project eliminates external dependencies and reduces data latency by leveraging **Snowflake’s Internal Stages** and orchestrating the entire lifecycle using **Apache Airflow**.
 
 ---
 
-### 🚀 Key Technical Objectives
+## 🚀 Key Technical Objectives
 * **Scalable Data Ingestion:** Automating the ingestion of large-scale CSV, Parquet, and JSON datasets directly into Snowflake Internal Storage.
 * **Modular Transformation (dbt):** Building a multi-layered data model (Staging, Intermediate, and Marts) using dbt to ensure data quality and automated documentation.
 * **Workflow Orchestration:** Implementing robust Airflow DAGs to manage end-to-end schedules and monitor pipeline health.
@@ -26,7 +26,7 @@
 
 ---
 
-### 🛠️ Tech Stack & Role Breakdown
+## 🛠️ Tech Stack & Role Breakdown
 | Technology | Role & Implementation |
 | :--- | :--- |
 | **Python** | Core language for dataset processing scripts and Airflow DAG development. |
@@ -37,7 +37,7 @@
 
 ---
 
-### 📂 Pipeline Architecture (The ELT Flow)
+## 📂 Pipeline Architecture (The ELT Flow)
 1. **Extraction:** Custom Python scripts fetch diverse datasets (CSV, Parquet, JSON).
 2. **Loading:** Data is pushed directly into **Snowflake Internal Stages**, optimizing for cost and performance.
 3. **Transformation (dbt Layers):**
@@ -48,20 +48,20 @@
 
 ---
 
-### 🧪 Quality Assurance & Monitoring
+## 🧪 Quality Assurance & Monitoring
 * **Data Integrity:** Utilizing dbt tests (`unique`, `not_null`, `relationships`) to ensure high data standards.
 * **Integration Testing:** Verifying the full data journey from source to dashboard.
 * **Performance Optimization:** Monitoring Airflow DAG execution times and dbt run performance for maximum scalability.
 
 ---
 
-### 👥 Project Team
+## 👥 Project Team
 * **Team Lead:** Youssef Ahmed Mohamed Alkamashany
 * **Team Members:** Abdullah Mohamed Ahmed, Abdelrahman Adel Abu Taleb, Omar Abdelgawad Mahmoud
 
 ---
 
-### 👤 Author & Contact
+## 👤 Author & Contact
 **Youssef Alkamashany**
 * 🚀 **Aspiring MLOps/LLMOps & AI Data Engineer**.
 * 💼 Team Leader — Microsoft Data Engineering | Digital Egypt Pioneers Initiative (DEPI).
