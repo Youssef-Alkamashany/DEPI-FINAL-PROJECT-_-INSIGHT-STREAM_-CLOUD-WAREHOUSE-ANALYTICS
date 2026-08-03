@@ -78,18 +78,18 @@ The pipeline is orchestrated via the `insightstream_elt_pipeline` DAG running on
   <img src="https://raw.githubusercontent.com/Youssef-Alkamashany/DEPI-FINAL-PROJECT-_-INSIGHT-STREAM_-CLOUD-WAREHOUSE-ANALYTICS/main/presentation_and_docs/DEPI%201.jpeg" width="85%" alt="Airflow DAG Graph" />
 </p>
 
-#### 🔹 Successful Pipeline Execution History
+### 🔹 Successful Pipeline Execution History
 <p align="center">
   <img src="https://raw.githubusercontent.com/Youssef-Alkamashany/DEPI-FINAL-PROJECT-_-INSIGHT-STREAM_-CLOUD-WAREHOUSE-ANALYTICS/main/presentation_and_docs/DEPI%206.jpeg" width="85%" alt="Airflow Pipeline Run History" />
 </p>
 
-#### 🔹 Ingestion Task Duration & Code Structure
+### 🔹 Ingestion Task Duration & Code Structure
 <p align="center">
   <img src="https://raw.githubusercontent.com/Youssef-Alkamashany/DEPI-FINAL-PROJECT-_-INSIGHT-STREAM_-CLOUD-WAREHOUSE-ANALYTICS/main/presentation_and_docs/DEPI%202.jpeg" width="48%" alt="Task Duration" />
   <img src="https://raw.githubusercontent.com/Youssef-Alkamashany/DEPI-FINAL-PROJECT-_-INSIGHT-STREAM_-CLOUD-WAREHOUSE-ANALYTICS/main/presentation_and_docs/DEPI%203.jpeg" width="48%" alt="DAG Python Code" />
 </p>
 
-#### 🔹 Active DAG Dashboard Status
+### 🔹 Active DAG Dashboard Status
 <p align="center">
   <img src="https://raw.githubusercontent.com/Youssef-Alkamashany/DEPI-FINAL-PROJECT-_-INSIGHT-STREAM_-CLOUD-WAREHOUSE-ANALYTICS/main/presentation_and_docs/DEPI%204.jpeg" width="85%" alt="Airflow DAGs List" />
 </p>
