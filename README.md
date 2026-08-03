@@ -140,8 +140,3 @@ The final, governed Gold-layer tables feed directly into Power BI Desktop via li
 ---
 
 <p align="center">"Building the foundation so solidly that the dashboard becomes the easy part." ☁️📊</p>
-
----
-
-
-
